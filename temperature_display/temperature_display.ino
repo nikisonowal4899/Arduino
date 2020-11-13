@@ -26,10 +26,10 @@ void setup() {
 
 void loop() {
   double temperature = tempModule(); // got the room temperature from the sensor
-  String str = String(temperature) + " °C";
+  String str = String(temperature) + " deg C";
   lcd.setCursor(0,1);
   lcd.print(str);
-  delay(50); // update every 50 ms
+  delay(700); // update every 700 ms
 }
 
 double tempModule() { // take the temp reading from the sensor
